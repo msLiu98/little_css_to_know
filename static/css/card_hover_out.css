@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    /*background-image: url("../img/shattered.png");*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(255,255,25,0.1);
+}
+.container .card{
+    position: relative;
+    width: 280px;
+    height: 550px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+.container .card .content
+{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card:hover .content
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .content h2
+{
+    position: relative;
+    top: -8px;
+    right: -60px;
+    font-size: 8em;
+    pointer-events: none;
+}
+
+.container .card .content h3
+{
+    font-size: 1.8em;
+    color:#4e555b;
+    z-index: 1;
+}
+.container .card .content p
+{
+    font-size: 1em;
+    color:#4e555b;
+    font-weight: 300;
+
+}
+.container .card .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background-attachment: #fff;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}

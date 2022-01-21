@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax Scrolling 1</title>
+    <link rel="stylesheet" href="static/css/jarallax.css">
+    <link rel="stylesheet" href="static/css/para_scroll.css">
+</head>
+<body>
+    <section>
+        <div class="box">
+            <h2 data-jarallax-element="0 -200">Awesome Parallax Scrolling</h2>
+            <div class="container">
+                <div class="img_box jarallax" >
+                    <img src="static/img/NewYork.jpg" class="jarallax-img">
+                </div>
+                <div class="content" data-jarallax-element="-200 0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="box">
+            <h2 data-jarallax-element="-200 0">Awesome Parallax Scrolling</h2>
+            <div class="container">
+                <div class="img_box jarallax" >
+                    <img src="static/img/NewYork.jpg" class="jarallax-img">
+                </div>
+                <div class="content" data-jarallax-element="0 -200">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="box">
+            <h2 data-jarallax-element="0 -200">Awesome Parallax Scrolling</h2>
+            <div class="container">
+                <div class="img_box jarallax" >
+                    <img src="static/img/NewYork.jpg" class="jarallax-img">
+                </div>
+                <div class="content" data-jarallax-element="-200 0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="static/js/jarallax.js"></script>
+    <script src="static/js/jarallax-element.js"></script>
+    <script type="text/javascript">
+        jarallax(document.querySelectorAll('.jarallax'), {
+            speed: 0.5
+        });
+    </script>
+</body>
+</html>
